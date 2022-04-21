@@ -3,7 +3,8 @@
 #include <string.h>
 
 /**
- * puts2 - prints every other character of a string followed by a new line
+ * puts2 - prints every other character of a string
+ * followed by a new line
  * @str: input
  * Return: Always 0
  */
@@ -15,8 +16,8 @@ void puts2(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			putchar(str[i])
+			putchar (str[i]);
 		}
 	}
-	putchar('\n');
+	putchar ('\n');
 }
