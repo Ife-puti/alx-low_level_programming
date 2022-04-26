@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strpbrk - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (success)
+ * _strpbrk - searching a string for any of a set of bytes
+ * @s: the string
+ * @accept: set of bytes
+ * Return: a pointer to the byte in s that matches one of the bytes in accept
  */
 char *_strpbrk(char *s, char *accept)
 {
