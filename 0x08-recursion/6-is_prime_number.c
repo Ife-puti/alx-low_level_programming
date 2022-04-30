@@ -4,7 +4,7 @@
  * prime_a - main - check the code
  * @a: number
  * @b: number of power
- * return: always 0
+ * Return: Always 0
  */
 
 int prime_a(int a, int b)
@@ -24,7 +24,7 @@ int prime_a(int a, int b)
  * is_prime_number - main - check the code
  * @n: number
  *
- * return: always 0
+ * Return: Always 0
  */
 int is_prime_number(int n)
 {
