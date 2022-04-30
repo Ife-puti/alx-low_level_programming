@@ -7,7 +7,7 @@
  * Return: on success 1
  * on error, -1 is returned, and error is set appropriately
  */
-int _strlen_recursion(char *s);
+int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
 	{
