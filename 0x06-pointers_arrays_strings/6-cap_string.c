@@ -7,17 +7,16 @@
  * Return: string
  */
 
-char *cap_string(char *s)
+char *cap_string(char *)
 {
 	int i = 1, j, check;
-	char a[] = {',' ';' '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
+	char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
 
-	if (s[0] > 96 && s[0] < 123)
+	if ([0] > 96 && s[0] < 123)
 		s[0] -= 32;
 
 	while (s[i] != '\0')
 	{
-
 		if (s[i] > 96 && s[i] < 123)
 		{
 			j = 0;
@@ -30,17 +29,12 @@ char *cap_string(char *s)
 				}
 				j++;
 			}
-				if (check == 1)
-				{
-					s[i] -= 32;
-				}
+			if (check == 1)
+			{
+				s[i] -= 32;
 			}
-			i++;
 		}
-		return (s);
+		i++;
+	}
+	return (s)
 }
-
-
-		
-	
-		
