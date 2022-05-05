@@ -4,8 +4,7 @@
 /**
  * main - prints the function
  * @argc: counts the arguments of the function
- * @argv: gives the value of the arguments passed 
- * to the function
+ * @argv: gives the value of the arguments passed to the function
  *
  * Return: Return always success
  */
