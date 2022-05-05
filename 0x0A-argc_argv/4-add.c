@@ -3,28 +3,39 @@
 #include <ctype.h>
 
 /**
- * _isnumber - checks if string is a number
- * @s: string
+ * main - checks the function
+ * @argc: counts the arguments passed to the function
+ * @argv: gives the value for the argument passed to the function
  *
- * Return: On success 1
- * If not a number, 0 is returned
+ * Return: Return always success
  */
 
-int _isnumber(char *s)
+int main(int argc, char *argv[])
 {
-	int i, check, d;
+	int sum;
+	int count;
+	int i;
 
-	i = 0, d = 0, check = 1;
-	if (*s == '_')
-		i++;
-	for (; *(s + i) != 0; i++)
+	count = 1;
+	sum = 0;
+	if (argc == 1)
 	{
-		d = isdigit(*(s + i));
-		if (d == 0)
-		{
-			check = 0;
-			break;
-		}
+		printf("0\n");
+		return (0);
 	}
-	return (check);
+	while (count < argc)
+	{
+		for (i = 0; argv[count][i] != '\0'; i++)
+		{
+			if (!(isdigit(argv[count][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[count]);
+		count++;
+	}
+	printf("%d\n", sum);
+	return (0);
 }
