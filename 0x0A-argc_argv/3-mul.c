@@ -2,24 +2,24 @@
 #include <stdlib.h>
 
 /**
- * main - multiply two numbers
- * @argc: argument count
- * @argv: array of pointers to argument strings
- * Return: result of multiplication or 1
+ * main - Entry point
+ *
+ * @argc: counts the number of parameters that go into main
+ * @argv: pointer of array of pointers containing strings entering main
+ * Return: Always 0 (success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int a, b, result;
-
-	if (argc <= 2)
+	int n, ex;
+	if (argc != 3)
 	{
-		printf("Error\n");
-		return (1);
+		printf("%\n", "Error");
+		ex = 1;
 	}
-	
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	result = a * b;
-	printf("%d\n", result);
-	return (0);
+	else
+	{
+		n = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", n);
+	}
+	return (ex);
 }
