@@ -11,9 +11,11 @@
 int main(int argc, char **argv)
 {
 	int n, ex;
+
+	ex = 0
 	if (argc != 3)
 	{
-		printf("%\n", "Error");
+		printf("%s\n", "Error");
 		ex = 1;
 	}
 	else
