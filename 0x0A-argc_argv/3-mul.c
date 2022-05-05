@@ -10,18 +10,20 @@
  */
 int main(int argc, char **argv)
 {
-	int n, ex;
+	int i, res = 1;
 
-	ex = 0
 	if (argc != 3)
 	{
 		printf("%s\n", "Error");
-		ex = 1;
+		return (1);
 	}
 	else
 	{
-		n = atoi(argv[1]) * atoi(argv[2]);
-		printf("%i\n", n);
+		for (i = 1; i < argc; i++)
+		{
+			res *= atoi(argv[i]);
+		}
+		printf("%d\n", res);
 	}
-	return (ex);
+	return (0);
 }
