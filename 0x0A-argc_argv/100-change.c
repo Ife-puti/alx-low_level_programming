@@ -23,7 +23,22 @@ int main(int argc, char *argv[])
 				cents -= 25;
 				coins++;
 			}
+			else if (cents % 10 < cents)
+			{
+				cents -= 10;
+				coins++;
+			}
 			else if (cents % 5 < cents)
+			{
+				cents -= 5;
+				coins++;
+			}
+			else if (cents % 2 < cents)
+			{
+				cents -= 2;
+				coins++;
+			}
+			else if (cents % 1 < cents)
 			{
 				cents -= 1;
 				coins++;
