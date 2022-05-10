@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * string_concate - concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: first string
  * @s2: second string
  * @n: number of bytes of s2
