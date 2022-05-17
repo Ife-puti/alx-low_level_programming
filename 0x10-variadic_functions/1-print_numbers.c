@@ -4,7 +4,7 @@
 /**
  * print_numbers - print numbers
  *
- * @separator: it is separator
+ * @separator: it is separater
  *
  * @n: length
  *
